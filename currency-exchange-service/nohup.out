@@ -1,0 +1,580 @@
+2018-04-05 14:39:07.929  INFO [currency-exchange-service,,,] 9913 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1888ff2c: startup date [Thu Apr 05 14:39:07 IST 2018]; root of context hierarchy
+2018-04-05 14:39:08.466  INFO [currency-exchange-service,,,] 9913 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:39:08.601  INFO [currency-exchange-service,,,] 9913 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$412c03e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-04-05 14:39:09.029  INFO [currency-exchange-service,,,] 9913 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-04-05 14:39:09.274  INFO [currency-exchange-service,,,] 9913 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=currency-exchange-service, profiles=[dev], label=null, version=6078befc9170641db3f3807699950239c4d38ede, state=null
+2018-04-05 14:39:09.275  INFO [currency-exchange-service,,,] 9913 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service-dev.properties'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service.properties'}]}
+2018-04-05 14:39:09.344  INFO [currency-exchange-service,,,] 9913 --- [           main] o.vg.CurrencyExchangeServiceApplication  : The following profiles are active: dev
+2018-04-05 14:39:09.379  INFO [currency-exchange-service,,,] 9913 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e127982: startup date [Thu Apr 05 14:39:09 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1888ff2c
+2018-04-05 14:39:11.160  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-04-05 14:39:11.270  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'environmentWebEndpointExtension' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointAutoConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/env/EnvironmentEndpointAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration.class]]
+2018-04-05 14:39:11.286  INFO [currency-exchange-service,,,] 9913 --- [           main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=configurableCompositeMessageConverter,declaringClass=org.springframework.cloud.stream.config.ContentTypeConfiguration]: a definition for bean 'integrationArgumentResolverMessageConverter' already exists. This top-level bean definition is considered as an override.
+2018-04-05 14:39:11.883  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2018-04-05 14:39:12.681  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d1cb8eed-aeed-3ca9-81e8-fe2b93d6ab0f
+2018-04-05 14:39:12.727  INFO [currency-exchange-service,,,] 9913 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-04-05 14:39:12.729  INFO [currency-exchange-service,,,] 9913 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-04-05 14:39:12.748  INFO [currency-exchange-service,,,] 9913 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:39:12.881  INFO [currency-exchange-service,,,] 9913 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$eb7dbf12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:39:13.665  INFO [currency-exchange-service,,,] 9913 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$251200e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:39:13.824  INFO [currency-exchange-service,,,] 9913 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$9003bc13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:39:14.048  INFO [currency-exchange-service,,,] 9913 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$412c03e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:39:15.141  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-05 14:39:15.192  INFO [currency-exchange-service,,,] 9913 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:39:15.193  INFO [currency-exchange-service,,,] 9913 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:39:15.211  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/vishnugupta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-04-05 14:39:15.358  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:39:15.359  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5980 ms
+2018-04-05 14:39:20.319  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-04-05 14:39:21.646  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:39:21.649  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-04-05 14:39:21.650  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-04-05 14:39:21.650  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:39:21.650  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:39:21.650  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:39:21.650  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-05 14:39:21.650  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-05 14:39:21.651  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:39:21.655  INFO [currency-exchange-service,,,] 9913 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-05 14:39:21.946  INFO [currency-exchange-service,,,] 9913 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-04-05 14:39:22.417  INFO [currency-exchange-service,,,] 9913 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-04-05 14:39:22.591  INFO [currency-exchange-service,,,] 9913 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-05 14:39:22.627  INFO [currency-exchange-service,,,] 9913 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-05 14:39:22.791  INFO [currency-exchange-service,,,] 9913 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-05 14:39:22.794  INFO [currency-exchange-service,,,] 9913 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-04-05 14:39:22.886  INFO [currency-exchange-service,,,] 9913 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-05 14:39:23.366  INFO [currency-exchange-service,,,] 9913 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table exchange_value if exists
+Hibernate: create table exchange_value (id bigint not null, conversion_factor decimal(19,2), currency_from varchar(255), currency_to varchar(255), primary key (id))
+2018-04-05 14:39:25.030  INFO [currency-exchange-service,,,] 9913 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@20a14b55'
+2018-04-05 14:39:25.036  INFO [currency-exchange-service,,,] 9913 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-05 14:39:25.234  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [jar:file:/Users/vishnugupta/Documents/learning/currency-exchange-service/target/curreny.exchange.service-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/data.sql]
+2018-04-05 14:39:25.238  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [jar:file:/Users/vishnugupta/Documents/learning/currency-exchange-service/target/curreny.exchange.service-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/data.sql] in 4 ms.
+2018-04-05 14:39:26.021  WARN [currency-exchange-service,,,] 9913 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:39:26.022  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:39:26.034  WARN [currency-exchange-service,,,] 9913 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:39:26.035  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:39:27.046  INFO [currency-exchange-service,,,] 9913 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e127982: startup date [Thu Apr 05 14:39:09 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1888ff2c
+2018-04-05 14:39:27.186  WARN [currency-exchange-service,,,] 9913 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-05 14:39:27.287  INFO [currency-exchange-service,,,] 9913 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/currencyExchange/from/{from}/to/{to}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.vg.entity.ExchangeValue> org.vg.controller.CurrencyExchangeController.retrieveExchangeValue(java.lang.String,java.lang.String)
+2018-04-05 14:39:27.301  INFO [currency-exchange-service,,,] 9913 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:39:27.302  INFO [currency-exchange-service,,,] 9913 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:39:27.465  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:39:27.465  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:39:27.604  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:39:30.983  INFO [currency-exchange-service,,,] 9913 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:39:30.984  INFO [currency-exchange-service,,,] 9913 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:39:30.985  INFO [currency-exchange-service,,,] 9913 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:39:31.566  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:39:31.568  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-05 14:39:31.585  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-04-05 14:39:31.588  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2018-04-05 14:39:31.590  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-05 14:39:31.595  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-05 14:39:31.598  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-05 14:39:31.603  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-05 14:39:31.626  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-05 14:39:31.694  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2018-04-05 14:39:31.749  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1e127982,type=ConfigurationPropertiesRebinder]
+2018-04-05 14:39:31.764  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-05 14:39:31.769  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-04-05 14:39:31.810  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2018-04-05 14:39:31.810  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2018-04-05 14:39:31.818  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2018-04-05 14:39:31.890  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2018-04-05 14:39:31.894  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2018-04-05 14:39:31.943  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2018-04-05 14:39:31.947  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2018-04-05 14:39:31.966  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2018-04-05 14:39:31.968  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2018-04-05 14:39:31.998  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2018-04-05 14:39:32.003  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2018-04-05 14:39:32.078  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'currency-exchange-service-1.springCloudBusInput' has 1 subscriber(s).
+2018-04-05 14:39:32.090  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-04-05 14:39:32.175  INFO [currency-exchange-service,,,] 9913 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-04-05 14:39:32.275  INFO [currency-exchange-service,,,] 9913 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=currency-exchange-service, profiles=[dev], label=null, version=6078befc9170641db3f3807699950239c4d38ede, state=null
+2018-04-05 14:39:32.275  INFO [currency-exchange-service,,,] 9913 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service-dev.properties'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service.properties'}]}
+2018-04-05 14:39:32.294  INFO [currency-exchange-service,,,] 9913 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@408a247c: startup date [Thu Apr 05 14:39:32 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e127982
+2018-04-05 14:39:32.359  INFO [currency-exchange-service,,,] 9913 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:39:32.470  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@4a31c2ee: startup date [Thu Apr 05 14:39:32 IST 2018]; root of context hierarchy
+2018-04-05 14:39:32.666  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2018-04-05 14:39:32.799  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7192155d:0/SimpleConnection@534ca02b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52358]
+2018-04-05 14:39:32.875  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'currency-exchange-service-1.springCloudBusOutput' has 1 subscriber(s).
+2018-04-05 14:39:32.879  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-05 14:39:32.896  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-05 14:39:32.983  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-05 14:39:33.405  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-05 14:39:33.415  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-05 14:39:33.699  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-05 14:39:33.699  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-05 14:39:34.101  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:39:34.145  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-05 14:39:34.145  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-05 14:39:34.145  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-05 14:39:34.145  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-05 14:39:34.145  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-05 14:39:34.145  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-05 14:39:34.146  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-05 14:39:34.393  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-05 14:39:34.398  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-05 14:39:34.403  INFO [currency-exchange-service,,,] 9913 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-05 14:39:34.410  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522919374408 with initial instances count: 0
+2018-04-05 14:39:34.440  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application currency-exchange-service with eureka with status UP
+2018-04-05 14:39:34.442  INFO [currency-exchange-service,,,] 9913 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522919374442, current=UP, previous=STARTING]
+2018-04-05 14:39:34.445  INFO [currency-exchange-service,,,] 9913 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE-SERVICE/10.1.16.123:currency-exchange-service:8000: registering service...
+2018-04-05 14:39:34.456  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-04-05 14:39:34.456  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'currency-exchange-service-1.errorChannel' has 1 subscriber(s).
+2018-04-05 14:39:34.456  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-04-05 14:39:34.456  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2018-04-05 14:39:34.531  INFO [currency-exchange-service,,,] 9913 --- [           main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.dvFvPd0STQKWSmW4etPd7g, bound to: springCloudBus
+2018-04-05 14:39:34.585  INFO [currency-exchange-service,,,] 9913 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE-SERVICE/10.1.16.123:currency-exchange-service:8000 - registration status: 204
+2018-04-05 14:39:34.646  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'currency-exchange-service-1-1.springCloudBus.anonymous.dvFvPd0STQKWSmW4etPd7g.errors' has 1 subscriber(s).
+2018-04-05 14:39:34.647  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'currency-exchange-service-1-1.springCloudBus.anonymous.dvFvPd0STQKWSmW4etPd7g.errors' has 2 subscriber(s).
+2018-04-05 14:39:34.726  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBus.anonymous.dvFvPd0STQKWSmW4etPd7g
+2018-04-05 14:39:34.730  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-05 14:39:34.920  INFO [currency-exchange-service,,,] 9913 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-05 14:39:34.922  INFO [currency-exchange-service,,,] 9913 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2018-04-05 14:39:34.930  INFO [currency-exchange-service,,,] 9913 --- [           main] o.vg.CurrencyExchangeServiceApplication  : Started CurrencyExchangeServiceApplication in 28.206 seconds (JVM running for 28.942)
+2018-04-05 14:40:04.432  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-05 14:40:04.432  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-05 14:40:04.432  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-05 14:40:04.433  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-05 14:40:04.433  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-05 14:40:04.433  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2018-04-05 14:40:04.433  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-05 14:40:04.483  INFO [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-05 14:40:15.578  INFO [currency-exchange-service,,,] 9913 --- [nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-05 14:40:15.578  INFO [currency-exchange-service,,,] 9913 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-05 14:40:15.633  INFO [currency-exchange-service,,,] 9913 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms
+2018-04-05 14:40:15.785  INFO [currency-exchange-service,f285a1810d2bec8e,f285a1810d2bec8e,true] 9913 --- [nio-8000-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select exchangeva0_.id as id1_0_, exchangeva0_.conversion_factor as conversi2_0_, exchangeva0_.currency_from as currency3_0_, exchangeva0_.currency_to as currency4_0_ from exchange_value exchangeva0_ where exchangeva0_.currency_from=? and exchangeva0_.currency_to=?
+2018-04-05 14:41:04.497 ERROR [currency-exchange-service,,,] 9913 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.8.7.jar!/:1.8.7]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 26 common frames omitted
+
+2018-04-05 14:41:04.498  WARN [currency-exchange-service,,,] 9913 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-04-05 14:41:04.503 ERROR [currency-exchange-service,,,] 9913 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.8.7.jar!/:1.8.7]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 27 common frames omitted
+
+2018-04-05 14:41:04.503  WARN [currency-exchange-service,,,] 9913 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-04-05 14:41:04.504 ERROR [currency-exchange-service,,,] 9913 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE-SERVICE/10.1.16.123:currency-exchange-service:8000 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.8.7.jar!/:1.8.7]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-04-05 14:41:04.517 ERROR [currency-exchange-service,,,] 9913 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1471) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1438) [eureka-client-1.8.7.jar!/:1.8.7]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 29 common frames omitted
+
+2018-04-05 14:41:04.518  WARN [currency-exchange-service,,,] 9913 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-04-05 14:41:04.524 ERROR [currency-exchange-service,,,] 9913 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1471) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1438) [eureka-client-1.8.7.jar!/:1.8.7]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_151]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_151]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_151]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_151]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 30 common frames omitted
+
+2018-04-05 14:41:04.525  WARN [currency-exchange-service,,,] 9913 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-04-05 14:41:04.526 ERROR [currency-exchange-service,,,] 9913 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE-SERVICE/10.1.16.123:currency-exchange-service:8000 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1471) [eureka-client-1.8.7.jar!/:1.8.7]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1438) [eureka-client-1.8.7.jar!/:1.8.7]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-04-05 14:49:35.281  INFO [currency-exchange-service,,,] 11910 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@357246de: startup date [Thu Apr 05 14:49:35 IST 2018]; root of context hierarchy
+2018-04-05 14:49:35.848  INFO [currency-exchange-service,,,] 11910 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:49:36.008  INFO [currency-exchange-service,,,] 11910 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a327c650] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-04-05 14:49:36.462  INFO [currency-exchange-service,,,] 11910 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-04-05 14:49:36.801  INFO [currency-exchange-service,,,] 11910 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=currency-exchange-service, profiles=[dev], label=null, version=6078befc9170641db3f3807699950239c4d38ede, state=null
+2018-04-05 14:49:36.802  INFO [currency-exchange-service,,,] 11910 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service-dev.properties'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service.properties'}]}
+2018-04-05 14:49:36.882  INFO [currency-exchange-service,,,] 11910 --- [           main] o.vg.CurrencyExchangeServiceApplication  : The following profiles are active: dev
+2018-04-05 14:49:36.910  INFO [currency-exchange-service,,,] 11910 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31dc339b: startup date [Thu Apr 05 14:49:36 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@357246de
+2018-04-05 14:49:38.652  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-04-05 14:49:38.742  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'environmentWebEndpointExtension' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointAutoConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/env/EnvironmentEndpointAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration.class]]
+2018-04-05 14:49:38.752  INFO [currency-exchange-service,,,] 11910 --- [           main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=configurableCompositeMessageConverter,declaringClass=org.springframework.cloud.stream.config.ContentTypeConfiguration]: a definition for bean 'integrationArgumentResolverMessageConverter' already exists. This top-level bean definition is considered as an override.
+2018-04-05 14:49:39.380  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2018-04-05 14:49:40.036  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d1cb8eed-aeed-3ca9-81e8-fe2b93d6ab0f
+2018-04-05 14:49:40.116  INFO [currency-exchange-service,,,] 11910 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-04-05 14:49:40.119  INFO [currency-exchange-service,,,] 11910 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-04-05 14:49:40.142  INFO [currency-exchange-service,,,] 11910 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:49:40.284  INFO [currency-exchange-service,,,] 11910 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$4d798181] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:49:41.048  INFO [currency-exchange-service,,,] 11910 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$870dc353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:49:41.202  INFO [currency-exchange-service,,,] 11910 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$f1ff7e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:49:41.371  INFO [currency-exchange-service,,,] 11910 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a327c650] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:49:42.109  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-05 14:49:42.161  INFO [currency-exchange-service,,,] 11910 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:49:42.161  INFO [currency-exchange-service,,,] 11910 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:49:42.179  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/vishnugupta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-04-05 14:49:42.324  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:49:42.325  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5416 ms
+2018-04-05 14:49:46.067  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-04-05 14:49:47.171  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:49:47.172  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-04-05 14:49:47.172  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-04-05 14:49:47.172  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:49:47.172  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:49:47.173  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:49:47.173  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-05 14:49:47.174  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-05 14:49:47.174  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:49:47.176  INFO [currency-exchange-service,,,] 11910 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-05 14:49:47.373  INFO [currency-exchange-service,,,] 11910 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-04-05 14:49:47.653  INFO [currency-exchange-service,,,] 11910 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-04-05 14:49:47.748  INFO [currency-exchange-service,,,] 11910 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-05 14:49:47.783  INFO [currency-exchange-service,,,] 11910 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-05 14:49:47.945  INFO [currency-exchange-service,,,] 11910 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-05 14:49:47.948  INFO [currency-exchange-service,,,] 11910 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-04-05 14:49:48.036  INFO [currency-exchange-service,,,] 11910 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-05 14:49:48.403  INFO [currency-exchange-service,,,] 11910 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table exchange_value if exists
+Hibernate: create table exchange_value (id bigint not null, conversion_factor decimal(19,2), currency_from varchar(255), currency_to varchar(255), primary key (id))
+2018-04-05 14:49:49.417  INFO [currency-exchange-service,,,] 11910 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@20f12539'
+2018-04-05 14:49:49.422  INFO [currency-exchange-service,,,] 11910 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-05 14:49:49.600  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [jar:file:/Users/vishnugupta/Documents/learning/currency-exchange-service/target/curreny.exchange.service-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/data.sql]
+2018-04-05 14:49:49.604  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [jar:file:/Users/vishnugupta/Documents/learning/currency-exchange-service/target/curreny.exchange.service-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/data.sql] in 4 ms.
+2018-04-05 14:49:50.295  WARN [currency-exchange-service,,,] 11910 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:49:50.295  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:49:50.307  WARN [currency-exchange-service,,,] 11910 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:49:50.308  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:49:51.200  INFO [currency-exchange-service,,,] 11910 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31dc339b: startup date [Thu Apr 05 14:49:36 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@357246de
+2018-04-05 14:49:51.321  WARN [currency-exchange-service,,,] 11910 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-05 14:49:51.416  INFO [currency-exchange-service,,,] 11910 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/currencyExchange/from/{from}/to/{to}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.vg.entity.ExchangeValue> org.vg.controller.CurrencyExchangeController.retrieveExchangeValue(java.lang.String,java.lang.String)
+2018-04-05 14:49:51.421  INFO [currency-exchange-service,,,] 11910 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:49:51.423  INFO [currency-exchange-service,,,] 11910 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:49:51.629  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:49:51.636  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:49:51.797  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:49:54.614  INFO [currency-exchange-service,,,] 11910 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:49:54.615  INFO [currency-exchange-service,,,] 11910 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:49:54.616  INFO [currency-exchange-service,,,] 11910 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:49:55.075  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:49:55.076  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-05 14:49:55.091  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-04-05 14:49:55.093  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2018-04-05 14:49:55.094  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-05 14:49:55.096  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-05 14:49:55.101  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-05 14:49:55.107  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-05 14:49:55.127  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-05 14:49:55.148  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2018-04-05 14:49:55.203  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=31dc339b,type=ConfigurationPropertiesRebinder]
+2018-04-05 14:49:55.214  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-05 14:49:55.219  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-04-05 14:49:55.250  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2018-04-05 14:49:55.251  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2018-04-05 14:49:55.261  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2018-04-05 14:49:55.330  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2018-04-05 14:49:55.332  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2018-04-05 14:49:55.371  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2018-04-05 14:49:55.374  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2018-04-05 14:49:55.393  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2018-04-05 14:49:55.396  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2018-04-05 14:49:55.420  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2018-04-05 14:49:55.423  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2018-04-05 14:49:55.497  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'currency-exchange-service-1.springCloudBusInput' has 1 subscriber(s).
+2018-04-05 14:49:55.509  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-04-05 14:49:55.587  INFO [currency-exchange-service,,,] 11910 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-04-05 14:49:55.716  INFO [currency-exchange-service,,,] 11910 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=currency-exchange-service, profiles=[dev], label=null, version=6078befc9170641db3f3807699950239c4d38ede, state=null
+2018-04-05 14:49:55.717  INFO [currency-exchange-service,,,] 11910 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service-dev.properties'}, MapPropertySource {name='file:///Users/vishnugupta/Documents/learning/SpringCloudConfigServer/git-spring-cloud-config-repo/currency-exchange-service.properties'}]}
+2018-04-05 14:49:55.740  INFO [currency-exchange-service,,,] 11910 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ba1f559: startup date [Thu Apr 05 14:49:55 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31dc339b
+2018-04-05 14:49:55.812  INFO [currency-exchange-service,,,] 11910 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:49:55.915  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@28952dea: startup date [Thu Apr 05 14:49:55 IST 2018]; root of context hierarchy
+2018-04-05 14:49:56.132  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2018-04-05 14:49:56.264  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1bef0485:0/SimpleConnection@6719a5b8 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52796]
+2018-04-05 14:49:56.344  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'currency-exchange-service-1.springCloudBusOutput' has 1 subscriber(s).
+2018-04-05 14:49:56.348  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-05 14:49:56.362  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-05 14:49:56.459  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-05 14:49:56.952  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-05 14:49:56.953  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-05 14:49:57.245  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-05 14:49:57.246  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-05 14:49:57.597  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:49:57.649  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-05 14:49:57.650  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-05 14:49:57.652  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-05 14:49:57.652  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-05 14:49:57.654  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-05 14:49:57.654  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-05 14:49:57.655  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-05 14:49:57.915  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-05 14:49:57.920  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-05 14:49:57.926  INFO [currency-exchange-service,,,] 11910 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-05 14:49:57.932  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522919997930 with initial instances count: 0
+2018-04-05 14:49:57.959  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application currency-exchange-service with eureka with status UP
+2018-04-05 14:49:57.961  INFO [currency-exchange-service,,,] 11910 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522919997961, current=UP, previous=STARTING]
+2018-04-05 14:49:57.965  INFO [currency-exchange-service,,,] 11910 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE-SERVICE/10.1.16.123:currency-exchange-service:8000: registering service...
+2018-04-05 14:49:57.978  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-04-05 14:49:57.979  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'currency-exchange-service-1.errorChannel' has 1 subscriber(s).
+2018-04-05 14:49:57.980  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-04-05 14:49:57.980  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2018-04-05 14:49:58.063  INFO [currency-exchange-service,,,] 11910 --- [           main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.3zK8YkwgQZ-ac1739M2TWA, bound to: springCloudBus
+2018-04-05 14:49:58.146  INFO [currency-exchange-service,,,] 11910 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE-SERVICE/10.1.16.123:currency-exchange-service:8000 - registration status: 204
+2018-04-05 14:49:58.193  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'currency-exchange-service-1-1.springCloudBus.anonymous.3zK8YkwgQZ-ac1739M2TWA.errors' has 1 subscriber(s).
+2018-04-05 14:49:58.195  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'currency-exchange-service-1-1.springCloudBus.anonymous.3zK8YkwgQZ-ac1739M2TWA.errors' has 2 subscriber(s).
+2018-04-05 14:49:58.284  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBus.anonymous.3zK8YkwgQZ-ac1739M2TWA
+2018-04-05 14:49:58.294  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-05 14:49:58.453  INFO [currency-exchange-service,,,] 11910 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-05 14:49:58.456  INFO [currency-exchange-service,,,] 11910 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2018-04-05 14:49:58.462  INFO [currency-exchange-service,,,] 11910 --- [           main] o.vg.CurrencyExchangeServiceApplication  : Started CurrencyExchangeServiceApplication in 24.562 seconds (JVM running for 25.324)
+2018-04-05 14:50:27.924  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-05 14:50:27.925  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-05 14:50:27.925  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-05 14:50:27.925  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-05 14:50:27.925  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-05 14:50:27.925  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2018-04-05 14:50:27.925  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-05 14:50:28.015  INFO [currency-exchange-service,,,] 11910 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-05 14:54:57.672  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:55:39.704  INFO [currency-exchange-service,,,] 11910 --- [nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-05 14:55:39.704  INFO [currency-exchange-service,,,] 11910 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-05 14:55:39.949  INFO [currency-exchange-service,,,] 11910 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 245 ms
+2018-04-05 14:55:40.354  INFO [currency-exchange-service,168ae849aa1f2fe7,c81c968242523e26,true] 11910 --- [nio-8000-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select exchangeva0_.id as id1_0_, exchangeva0_.conversion_factor as conversi2_0_, exchangeva0_.currency_from as currency3_0_, exchangeva0_.currency_to as currency4_0_ from exchange_value exchangeva0_ where exchangeva0_.currency_from=? and exchangeva0_.currency_to=?
+Hibernate: select exchangeva0_.id as id1_0_, exchangeva0_.conversion_factor as conversi2_0_, exchangeva0_.currency_from as currency3_0_, exchangeva0_.currency_to as currency4_0_ from exchange_value exchangeva0_ where exchangeva0_.currency_from=? and exchangeva0_.currency_to=?
+Hibernate: select exchangeva0_.id as id1_0_, exchangeva0_.conversion_factor as conversi2_0_, exchangeva0_.currency_from as currency3_0_, exchangeva0_.currency_to as currency4_0_ from exchange_value exchangeva0_ where exchangeva0_.currency_from=? and exchangeva0_.currency_to=?
+Hibernate: select exchangeva0_.id as id1_0_, exchangeva0_.conversion_factor as conversi2_0_, exchangeva0_.currency_from as currency3_0_, exchangeva0_.currency_to as currency4_0_ from exchange_value exchangeva0_ where exchangeva0_.currency_from=? and exchangeva0_.currency_to=?
+2018-04-05 14:59:57.686  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 15:04:57.702  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 15:09:57.712  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 16:54:46.940  WARN [currency-exchange-service,,,] 11910 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h42m29s29ms).
+2018-04-05 16:56:56.751  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:01:56.763  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:06:56.778  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:11:56.812  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:16:56.827  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:21:56.845  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:26:56.857  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:31:56.874  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:36:56.892  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:41:56.937  INFO [currency-exchange-service,,,] 11910 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

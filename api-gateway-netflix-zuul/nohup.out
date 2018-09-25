@@ -1,0 +1,771 @@
+2018-04-05 14:51:38.916  INFO [-,,,] 12316 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71e7a66b: startup date [Thu Apr 05 14:51:38 IST 2018]; root of context hierarchy
+2018-04-05 14:51:39.482  INFO [-,,,] 12316 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:51:39.575  INFO [-,,,] 12316 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7475263a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-04-05 14:51:39.935  INFO [api-gateway-server,,,] 12316 --- [           main] org.vg.ApiGatewayNetflixZuulApplication  : No active profile set, falling back to default profiles: default
+2018-04-05 14:51:39.979  INFO [api-gateway-server,,,] 12316 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4883b407: startup date [Thu Apr 05 14:51:39 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@71e7a66b
+2018-04-05 14:51:41.376  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-04-05 14:51:41.443  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'environmentWebEndpointExtension' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointAutoConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/env/EnvironmentEndpointAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration.class]]
+2018-04-05 14:51:41.452  INFO [api-gateway-server,,,] 12316 --- [           main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=configurableCompositeMessageConverter,declaringClass=org.springframework.cloud.stream.config.ContentTypeConfiguration]: a definition for bean 'integrationArgumentResolverMessageConverter' already exists. This top-level bean definition is considered as an override.
+2018-04-05 14:51:41.702  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'proxyRequestHelper' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration$EndpointConfiguration; factoryMethodName=proxyRequestHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration$NoActuatorConfiguration; factoryMethodName=proxyRequestHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class]]
+2018-04-05 14:51:41.718  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'counterFactory' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulMetricsConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulMetricsConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration.class]]
+2018-04-05 14:51:42.531  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9410973b-75a4-34f7-8733-66b862fa9143
+2018-04-05 14:51:42.569  INFO [api-gateway-server,,,] 12316 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-04-05 14:51:42.572  INFO [api-gateway-server,,,] 12316 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-04-05 14:51:42.593  INFO [api-gateway-server,,,] 12316 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:51:42.689  INFO [api-gateway-server,,,] 12316 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1ec6e16b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:51:43.502  INFO [api-gateway-server,,,] 12316 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$c34cde6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:51:43.612  INFO [api-gateway-server,,,] 12316 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7475263a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:51:44.366  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8675 (http)
+2018-04-05 14:51:44.433  INFO [api-gateway-server,,,] 12316 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:51:44.433  INFO [api-gateway-server,,,] 12316 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:51:44.454  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/vishnugupta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-04-05 14:51:44.631  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:51:44.631  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4652 ms
+2018-04-05 14:51:48.401  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-04-05 14:51:49.318  WARN [api-gateway-server,,,] 12316 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:51:49.318  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:51:49.329  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2e7ff49e
+2018-04-05 14:51:49.576  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:51:49.576  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-04-05 14:51:49.577  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-04-05 14:51:49.577  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:51:49.577  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:51:49.577  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:51:49.577  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-05 14:51:49.577  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-05 14:51:49.578  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:51:49.580  INFO [api-gateway-server,,,] 12316 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet zuulServlet mapped to [/zuul/*]
+2018-04-05 14:51:49.756  WARN [api-gateway-server,,,] 12316 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:51:49.756  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:51:50.248  INFO [api-gateway-server,,,] 12316 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4883b407: startup date [Thu Apr 05 14:51:39 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@71e7a66b
+2018-04-05 14:51:50.479  INFO [api-gateway-server,,,] 12316 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:51:50.481  INFO [api-gateway-server,,,] 12316 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:51:50.659  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:51:50.660  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:51:50.826  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:51:54.212  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2018-04-05 14:51:54.591  INFO [api-gateway-server,,,] 12316 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:51:54.592  INFO [api-gateway-server,,,] 12316 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:51:54.593  INFO [api-gateway-server,,,] 12316 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:51:55.068  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:51:55.086  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-04-05 14:51:55.088  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2018-04-05 14:51:55.090  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-05 14:51:55.091  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-05 14:51:55.095  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-05 14:51:55.101  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-05 14:51:55.124  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-05 14:51:55.148  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2018-04-05 14:51:55.205  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4883b407,type=ConfigurationPropertiesRebinder]
+2018-04-05 14:51:55.220  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-04-05 14:51:55.256  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2018-04-05 14:51:55.257  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2018-04-05 14:51:55.266  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2018-04-05 14:51:55.354  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2018-04-05 14:51:55.357  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2018-04-05 14:51:55.372  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2018-04-05 14:51:55.376  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2018-04-05 14:51:55.393  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2018-04-05 14:51:55.396  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2018-04-05 14:51:55.425  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2018-04-05 14:51:55.428  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2018-04-05 14:51:55.498  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2018-04-05 14:51:55.511  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-04-05 14:51:55.606  INFO [api-gateway-server,,,] 12316 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47db5fa5: startup date [Thu Apr 05 14:51:55 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4883b407
+2018-04-05 14:51:55.681  INFO [api-gateway-server,,,] 12316 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:51:55.792  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@15eebbff: startup date [Thu Apr 05 14:51:55 IST 2018]; root of context hierarchy
+2018-04-05 14:51:55.891  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-05 14:51:55.972  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-05 14:51:56.083  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-05 14:51:56.083  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-05 14:51:56.646  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-05 14:51:56.646  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-05 14:51:56.976  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:51:57.017  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-05 14:51:57.017  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-05 14:51:57.017  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-05 14:51:57.018  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-05 14:51:57.018  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-05 14:51:57.018  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-05 14:51:57.018  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-05 14:51:57.364  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-05 14:51:57.368  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-05 14:51:57.373  INFO [api-gateway-server,,,] 12316 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-05 14:51:57.380  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522920117378 with initial instances count: 1
+2018-04-05 14:51:57.594  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2018-04-05 14:51:57.739  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#58500921:0/SimpleConnection@30c0ccff [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52851]
+2018-04-05 14:51:57.820  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2018-04-05 14:51:57.824  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-05 14:51:57.825  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application api-gateway-server with eureka with status UP
+2018-04-05 14:51:57.826  INFO [api-gateway-server,,,] 12316 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522920117826, current=UP, previous=STARTING]
+2018-04-05 14:51:57.828  INFO [api-gateway-server,,,] 12316 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY-SERVER/10.1.16.123:api-gateway-server:8675: registering service...
+2018-04-05 14:51:57.842  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-04-05 14:51:57.844  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2018-04-05 14:51:57.844  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-04-05 14:51:57.844  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2018-04-05 14:51:57.908  INFO [api-gateway-server,,,] 12316 --- [           main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.HqFd9jSmRu6YckNPKPzKgQ, bound to: springCloudBus
+2018-04-05 14:51:57.914  INFO [api-gateway-server,,,] 12316 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY-SERVER/10.1.16.123:api-gateway-server:8675 - registration status: 204
+2018-04-05 14:51:57.962  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1-1.springCloudBus.anonymous.HqFd9jSmRu6YckNPKPzKgQ.errors' has 1 subscriber(s).
+2018-04-05 14:51:57.964  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1-1.springCloudBus.anonymous.HqFd9jSmRu6YckNPKPzKgQ.errors' has 2 subscriber(s).
+2018-04-05 14:51:58.023  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBus.anonymous.HqFd9jSmRu6YckNPKPzKgQ
+2018-04-05 14:51:58.026  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-05 14:51:58.131  INFO [api-gateway-server,,,] 12316 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8675 (http) with context path ''
+2018-04-05 14:51:58.134  INFO [api-gateway-server,,,] 12316 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8675
+2018-04-05 14:51:58.139  INFO [api-gateway-server,,,] 12316 --- [           main] org.vg.ApiGatewayNetflixZuulApplication  : Started ApiGatewayNetflixZuulApplication in 20.463 seconds (JVM running for 21.309)
+2018-04-05 14:55:35.939  INFO [api-gateway-server,,,] 12316 --- [nio-8675-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-05 14:55:35.939  INFO [api-gateway-server,,,] 12316 --- [nio-8675-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-05 14:55:36.003  INFO [api-gateway-server,,,] 12316 --- [nio-8675-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+2018-04-05 14:55:36.069  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/currency-exchange-service/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-04-05 14:55:36.070  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/currency-conversion-service/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-04-05 14:55:36.115  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@6d86a457, request uri -> /currency-conversion-service/currency-converter/from/USD/to/INR/amount/100
+2018-04-05 14:55:36.147  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-currency-conversion-service: startup date [Thu Apr 05 14:55:36 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4883b407
+2018-04-05 14:55:36.228  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:55:36.577  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: currency-conversion-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:36.613  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-currency-conversion-service
+2018-04-05 14:55:36.668  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: currency-conversion-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=currency-conversion-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-04-05 14:55:36.709  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-04-05 14:55:36.758  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: currency-conversion-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:36.765  INFO [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client currency-conversion-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=currency-conversion-service,current list of Servers=[10.1.16.123:8100],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:10.1.16.123:8100;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@760f9558
+2018-04-05 14:55:37.716  INFO [api-gateway-server,,,] 12316 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: currency-conversion-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:38.287  WARN [api-gateway-server,168ae849aa1f2fe7,168ae849aa1f2fe7,true] 12316 --- [nio-8675-exec-1] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:189) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:164) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:112) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:165) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44) [spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) [spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:76) [brave-instrumentation-servlet-4.18.2.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: com.netflix.client.ClientException: null
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:118) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:186) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:51) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:410) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at org.springframework.cloud.sleuth.instrument.zuul.TraceRibbonCommandFactory$2.execute(TraceRibbonCommandFactory.java:111) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.zuul.TraceRibbonCommandFactory$2.execute(TraceRibbonCommandFactory.java:105) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:159) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	... 71 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at rx.exceptions.Exceptions.propagate(Exceptions.java:57) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:463) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	... 135 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_151]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at brave.httpclient.TracingMainExec.execute(TracingMainExec.java:50) ~[brave-instrumentation-httpclient-4.18.2.jar!/:na]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at brave.httpclient.TracingProtocolExec.execute(TracingProtocolExec.java:41) ~[brave-instrumentation-httpclient-4.18.2.jar!/:na]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.lambda$execute$0(RetryableRibbonLoadBalancingHttpClient.java:93) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.executeWithRetry(RetryableRibbonLoadBalancingHttpClient.java:132) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.execute(RetryableRibbonLoadBalancingHttpClient.java:106) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.execute(RetryableRibbonLoadBalancingHttpClient.java:53) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.6.jar!/:1.3.6]
+	... 137 common frames omitted
+
+2018-04-05 14:55:39.096  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@a4679e2, request uri -> /currency-exchange-service/currencyExchange/from/USD/to/INR
+2018-04-05 14:55:39.100  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-currency-exchange-service: startup date [Thu Apr 05 14:55:39 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4883b407
+2018-04-05 14:55:39.165  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:55:39.238  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: currency-exchange-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:39.240  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-currency-exchange-service
+2018-04-05 14:55:39.241  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: currency-exchange-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=currency-exchange-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-04-05 14:55:39.246  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-04-05 14:55:39.251  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: currency-exchange-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:39.253  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client currency-exchange-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=currency-exchange-service,current list of Servers=[10.1.16.123:8000],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:10.1.16.123:8000;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@34a609ac
+2018-04-05 14:55:40.109  INFO [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-3] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@7992a9f1, request uri -> /currency-exchange-service/currencyExchange/from/USD/to/INR
+2018-04-05 14:55:40.253  INFO [api-gateway-server,,,] 12316 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: currency-exchange-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:40.404  WARN [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-2] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:189) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:164) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:112) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:165) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44) [spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) [spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:76) [brave-instrumentation-servlet-4.18.2.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: com.netflix.client.ClientException: null
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:118) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:186) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:51) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:410) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at org.springframework.cloud.sleuth.instrument.zuul.TraceRibbonCommandFactory$2.execute(TraceRibbonCommandFactory.java:111) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.zuul.TraceRibbonCommandFactory$2.execute(TraceRibbonCommandFactory.java:105) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:159) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	... 71 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at rx.exceptions.Exceptions.propagate(Exceptions.java:57) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:463) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	... 135 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_151]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at brave.httpclient.TracingMainExec.execute(TracingMainExec.java:50) ~[brave-instrumentation-httpclient-4.18.2.jar!/:na]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at brave.httpclient.TracingProtocolExec.execute(TracingProtocolExec.java:41) ~[brave-instrumentation-httpclient-4.18.2.jar!/:na]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.lambda$execute$0(RetryableRibbonLoadBalancingHttpClient.java:93) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.executeWithRetry(RetryableRibbonLoadBalancingHttpClient.java:132) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.execute(RetryableRibbonLoadBalancingHttpClient.java:106) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.execute(RetryableRibbonLoadBalancingHttpClient.java:53) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.6.jar!/:1.3.6]
+	... 137 common frames omitted
+
+2018-04-05 14:55:41.121  WARN [api-gateway-server,168ae849aa1f2fe7,258136f3ff600e7d,true] 12316 --- [nio-8675-exec-3] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:189) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:164) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:112) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) ~[zuul-core-1.3.1.jar!/:1.3.1]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:165) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44) [spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) [spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) [spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:76) [brave-instrumentation-servlet-4.18.2.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: com.netflix.client.ClientException: null
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:118) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:186) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:51) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:410) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344) ~[hystrix-core-1.5.12.jar!/:1.5.12]
+	at org.springframework.cloud.sleuth.instrument.zuul.TraceRibbonCommandFactory$2.execute(TraceRibbonCommandFactory.java:111) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.zuul.TraceRibbonCommandFactory$2.execute(TraceRibbonCommandFactory.java:105) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:159) ~[spring-cloud-netflix-zuul-2.0.0.M8.jar!/:2.0.0.M8]
+	... 71 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at rx.exceptions.Exceptions.propagate(Exceptions.java:57) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:463) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	... 135 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_151]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar!/:4.4.9]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at brave.httpclient.TracingMainExec.execute(TracingMainExec.java:50) ~[brave-instrumentation-httpclient-4.18.2.jar!/:na]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at brave.httpclient.TracingProtocolExec.execute(TracingProtocolExec.java:41) ~[brave-instrumentation-httpclient-4.18.2.jar!/:na]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar!/:4.5.5]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.lambda$execute$0(RetryableRibbonLoadBalancingHttpClient.java:93) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.executeWithRetry(RetryableRibbonLoadBalancingHttpClient.java:132) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.execute(RetryableRibbonLoadBalancingHttpClient.java:106) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at org.springframework.cloud.netflix.ribbon.apache.RetryableRibbonLoadBalancingHttpClient.execute(RetryableRibbonLoadBalancingHttpClient.java:53) ~[spring-cloud-netflix-ribbon-2.0.0.M8.jar!/:2.0.0.M8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.6.jar!/:1.3.6]
+	... 137 common frames omitted
+
+2018-04-05 14:56:57.033  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:58:13.377  INFO [api-gateway-server,5310178f43c11a19,5310178f43c11a19,true] 12316 --- [nio-8675-exec-5] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@2ba32e4f, request uri -> /currency-conversion-service/currency-converter/from/USD/to/INR/amount/100
+2018-04-05 14:58:13.393  INFO [api-gateway-server,5310178f43c11a19,d24bd56afbe4ad5a,true] 12316 --- [nio-8675-exec-6] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@5e93394c, request uri -> /currency-exchange-service/currencyExchange/from/USD/to/INR
+2018-04-05 14:58:16.587  INFO [api-gateway-server,c7c59cc64961a39d,c7c59cc64961a39d,true] 12316 --- [nio-8675-exec-7] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@7fab0d94, request uri -> /currency-conversion-service/currency-converter/from/USD/to/INR/amount/100
+2018-04-05 14:58:16.607  INFO [api-gateway-server,c7c59cc64961a39d,9da20988037a5249,true] 12316 --- [nio-8675-exec-8] org.vg.logging.LoggingFilter             : request -> org.springframework.cloud.netflix.zuul.filters.pre.Servlet30RequestWrapper@6dd9bd5b, request uri -> /currency-exchange-service/currencyExchange/from/USD/to/INR
+2018-04-05 15:01:57.046  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 15:06:57.065  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 15:11:57.084  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 16:58:56.125  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:03:56.137  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:08:56.153  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:13:56.188  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:18:56.233  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:23:56.254  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:28:56.270  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:33:56.288  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:38:56.307  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:43:56.353  INFO [api-gateway-server,,,] 12316 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -1,0 +1,446 @@
+2018-04-05 14:52:56.274  INFO [-,,,] 12558 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@73035e27: startup date [Thu Apr 05 14:52:56 IST 2018]; root of context hierarchy
+2018-04-05 14:52:56.852  INFO [-,,,] 12558 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:52:57.006  INFO [-,,,] 12558 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba120a2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-04-05 14:52:57.518  INFO [currency-conversion-service,,,] 12558 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-04-05 14:52:57.995  INFO [currency-conversion-service,,,] 12558 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=currency-conversion-service, profiles=[default], label=null, version=6078befc9170641db3f3807699950239c4d38ede, state=null
+2018-04-05 14:52:57.995  INFO [currency-conversion-service,,,] 12558 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}]}
+2018-04-05 14:52:58.091  INFO [currency-conversion-service,,,] 12558 --- [           main] o.v.CurrencyConversionServiceApplication : No active profile set, falling back to default profiles: default
+2018-04-05 14:52:58.155  INFO [currency-conversion-service,,,] 12558 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e06451e: startup date [Thu Apr 05 14:52:58 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@73035e27
+2018-04-05 14:53:00.073  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-04-05 14:53:00.163  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'environmentWebEndpointExtension' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointAutoConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/env/EnvironmentEndpointAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration; factoryMethodName=environmentWebEndpointExtension; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration$EndpointConfiguration.class]]
+2018-04-05 14:53:00.174  INFO [currency-conversion-service,,,] 12558 --- [           main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=configurableCompositeMessageConverter,declaringClass=org.springframework.cloud.stream.config.ContentTypeConfiguration]: a definition for bean 'integrationArgumentResolverMessageConverter' already exists. This top-level bean definition is considered as an override.
+2018-04-05 14:53:01.486  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=820eda87-9765-33e4-b2cf-7e6dc6d81395
+2018-04-05 14:53:01.558  INFO [currency-conversion-service,,,] 12558 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-04-05 14:53:01.562  INFO [currency-conversion-service,,,] 12558 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-04-05 14:53:01.590  INFO [currency-conversion-service,,,] 12558 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:53:01.738  INFO [currency-conversion-service,,,] 12558 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$6463c55d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:53:02.346  INFO [currency-conversion-service,,,] 12558 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$8e9c25e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:53:02.506  INFO [currency-conversion-service,,,] 12558 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba120a2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-05 14:53:03.387  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2018-04-05 14:53:03.436  INFO [currency-conversion-service,,,] 12558 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-05 14:53:03.437  INFO [currency-conversion-service,,,] 12558 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-05 14:53:03.452  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/vishnugupta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-04-05 14:53:03.590  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-05 14:53:03.590  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5435 ms
+2018-04-05 14:53:07.276  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-04-05 14:53:08.174  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 14:53:08.175  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-04-05 14:53:08.175  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-04-05 14:53:08.175  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 14:53:08.176  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 14:53:08.176  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 14:53:08.176  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-05 14:53:08.177  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-05 14:53:08.177  INFO [currency-conversion-service,,,] 12558 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-05 14:53:08.269  INFO [currency-conversion-service,,,] 12558 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing FeignContext-api-gateway-server: startup date [Thu Apr 05 14:53:08 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e06451e
+2018-04-05 14:53:08.299  INFO [currency-conversion-service,,,] 12558 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:53:08.855  WARN [currency-conversion-service,,,] 12558 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:53:08.861  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:53:08.872  WARN [currency-conversion-service,,,] 12558 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-05 14:53:08.873  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-05 14:53:09.235  INFO [currency-conversion-service,,,] 12558 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e06451e: startup date [Thu Apr 05 14:52:58 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@73035e27
+2018-04-05 14:53:09.409  INFO [currency-conversion-service,,,] 12558 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/currency-converter/from/{from}/to/{to}/amount/{amount}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.vg.entity.CurrencyConversion> org.vg.controller.CurrencyConversionController.covertConversion(java.lang.String,java.lang.String,java.math.BigDecimal)
+2018-04-05 14:53:09.414  INFO [currency-conversion-service,,,] 12558 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 14:53:09.415  INFO [currency-conversion-service,,,] 12558 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:53:09.567  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:53:09.568  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:53:09.722  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 14:53:12.418  INFO [currency-conversion-service,,,] 12558 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:53:12.419  INFO [currency-conversion-service,,,] 12558 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-05 14:53:12.421  INFO [currency-conversion-service,,,] 12558 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 14:53:12.955  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 14:53:12.969  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-04-05 14:53:12.972  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2018-04-05 14:53:12.974  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-05 14:53:12.976  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-05 14:53:12.979  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-05 14:53:12.984  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-05 14:53:13.003  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-05 14:53:13.025  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2018-04-05 14:53:13.085  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6e06451e,type=ConfigurationPropertiesRebinder]
+2018-04-05 14:53:13.103  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-04-05 14:53:13.155  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2018-04-05 14:53:13.156  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2018-04-05 14:53:13.165  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2018-04-05 14:53:13.256  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2018-04-05 14:53:13.259  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2018-04-05 14:53:13.273  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2018-04-05 14:53:13.276  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2018-04-05 14:53:13.294  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2018-04-05 14:53:13.300  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2018-04-05 14:53:13.332  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2018-04-05 14:53:13.335  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2018-04-05 14:53:13.407  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2018-04-05 14:53:13.417  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-04-05 14:53:13.511  INFO [currency-conversion-service,,,] 12558 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-04-05 14:53:13.623  INFO [currency-conversion-service,,,] 12558 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=currency-conversion-service, profiles=[default], label=null, version=6078befc9170641db3f3807699950239c4d38ede, state=null
+2018-04-05 14:53:13.624  INFO [currency-conversion-service,,,] 12558 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}]}
+2018-04-05 14:53:13.641  INFO [currency-conversion-service,,,] 12558 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b672daa: startup date [Thu Apr 05 14:53:13 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e06451e
+2018-04-05 14:53:13.727  INFO [currency-conversion-service,,,] 12558 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:53:13.871  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@71b3bc45: startup date [Thu Apr 05 14:53:13 IST 2018]; root of context hierarchy
+2018-04-05 14:53:14.138  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2018-04-05 14:53:14.279  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6227e856:0/SimpleConnection@56276db8 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52878]
+2018-04-05 14:53:14.365  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2018-04-05 14:53:14.369  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-05 14:53:14.389  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-05 14:53:14.489  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-05 14:53:15.268  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-05 14:53:15.270  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-05 14:53:15.571  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-05 14:53:15.572  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-05 14:53:15.977  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:53:16.051  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-05 14:53:16.052  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-05 14:53:16.052  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-05 14:53:16.052  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-05 14:53:16.053  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-05 14:53:16.053  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-05 14:53:16.053  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-05 14:53:16.368  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-05 14:53:16.382  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-05 14:53:16.387  INFO [currency-conversion-service,,,] 12558 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-05 14:53:16.395  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522920196392 with initial instances count: 2
+2018-04-05 14:53:16.431  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application currency-conversion-service with eureka with status UP
+2018-04-05 14:53:16.433  INFO [currency-conversion-service,,,] 12558 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522920196432, current=UP, previous=STARTING]
+2018-04-05 14:53:16.436  INFO [currency-conversion-service,,,] 12558 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-CONVERSION-SERVICE/10.1.16.123:currency-conversion-service:8100: registering service...
+2018-04-05 14:53:16.454  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-04-05 14:53:16.455  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2018-04-05 14:53:16.455  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-04-05 14:53:16.456  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2018-04-05 14:53:16.527  INFO [currency-conversion-service,,,] 12558 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-CONVERSION-SERVICE/10.1.16.123:currency-conversion-service:8100 - registration status: 204
+2018-04-05 14:53:16.535  INFO [currency-conversion-service,,,] 12558 --- [           main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.TZgKoLghQGOeATrNCZCAMw, bound to: springCloudBus
+2018-04-05 14:53:16.644  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1-1.springCloudBus.anonymous.TZgKoLghQGOeATrNCZCAMw.errors' has 1 subscriber(s).
+2018-04-05 14:53:16.646  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1-1.springCloudBus.anonymous.TZgKoLghQGOeATrNCZCAMw.errors' has 2 subscriber(s).
+2018-04-05 14:53:16.705  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBus.anonymous.TZgKoLghQGOeATrNCZCAMw
+2018-04-05 14:53:16.711  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-05 14:53:16.819  INFO [currency-conversion-service,,,] 12558 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2018-04-05 14:53:16.821  INFO [currency-conversion-service,,,] 12558 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8100
+2018-04-05 14:53:16.826  INFO [currency-conversion-service,,,] 12558 --- [           main] o.v.CurrencyConversionServiceApplication : Started CurrencyConversionServiceApplication in 22.041 seconds (JVM running for 22.926)
+2018-04-05 14:55:37.332  INFO [currency-conversion-service,,,] 12558 --- [nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-05 14:55:37.333  INFO [currency-conversion-service,,,] 12558 --- [nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-05 14:55:37.392  INFO [currency-conversion-service,,,] 12558 --- [nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2018-04-05 14:55:37.543  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-api-gateway-server: startup date [Thu Apr 05 14:55:37 IST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e06451e
+2018-04-05 14:55:37.691  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-05 14:55:38.517  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: api-gateway-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:38.569  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-api-gateway-server
+2018-04-05 14:55:38.650  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: api-gateway-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=api-gateway-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-04-05 14:55:38.679  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-04-05 14:55:38.752  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: api-gateway-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:38.757  INFO [currency-conversion-service,168ae849aa1f2fe7,258136f3ff600e7d,true] 12558 --- [nio-8100-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client api-gateway-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=api-gateway-server,current list of Servers=[10.1.16.123:8675],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:10.1.16.123:8675;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@7c630429
+2018-04-05 14:55:39.686  INFO [currency-conversion-service,,,] 12558 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: api-gateway-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-04-05 14:55:41.169 ERROR [currency-conversion-service,168ae849aa1f2fe7,907c7a481d3deb2f,true] 12558 --- [nio-8100-exec-1] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is feign.RetryableException: Read timed out executing GET http://api-gateway-server/currency-exchange-service/currencyExchange/from/USD/to/INR
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:986) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:76) [brave-instrumentation-servlet-4.18.2.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: feign.RetryableException: Read timed out executing GET http://api-gateway-server/currency-exchange-service/currencyExchange/from/USD/to/INR
+	at feign.FeignException.errorExecuting(FeignException.java:67) ~[feign-core-9.5.1.jar!/:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:104) ~[feign-core-9.5.1.jar!/:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76) ~[feign-core-9.5.1.jar!/:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103) ~[feign-core-9.5.1.jar!/:na]
+	at com.sun.proxy.$Proxy147.retriveExchangeValue(Unknown Source) ~[na:na]
+	at org.vg.controller.CurrencyConversionController.covertConversion(CurrencyConversionController.java:35) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	... 57 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_151]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_151]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286) ~[na:1.8.0_151]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345) ~[na:1.8.0_151]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735) ~[na:1.8.0_151]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678) ~[na:1.8.0_151]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587) ~[na:1.8.0_151]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492) ~[na:1.8.0_151]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_151]
+	at feign.Client$Default.convertResponse(Client.java:152) ~[feign-core-9.5.1.jar!/:na]
+	at feign.Client$Default.execute(Client.java:74) ~[feign-core-9.5.1.jar!/:na]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TracingFeignClient.execute(TracingFeignClient.java:88) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.LazyTracingFeignClient.execute(LazyTracingFeignClient.java:54) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:63) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.access$001(TraceLoadBalancerFeignClient.java:36) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.lambda$execute$0(TraceLoadBalancerFeignClient.java:50) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TracingFeignClient.execute(TracingFeignClient.java:88) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.LazyTracingFeignClient.execute(LazyTracingFeignClient.java:54) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.execute(TraceLoadBalancerFeignClient.java:50) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:97) ~[feign-core-9.5.1.jar!/:na]
+	... 74 common frames omitted
+
+2018-04-05 14:55:41.184 ERROR [currency-conversion-service,,,] 12558 --- [nio-8100-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Read timed out executing GET http://api-gateway-server/currency-exchange-service/currencyExchange/from/USD/to/INR] with root cause
+
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_151]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_151]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_151]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286) ~[na:1.8.0_151]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345) ~[na:1.8.0_151]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735) ~[na:1.8.0_151]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678) ~[na:1.8.0_151]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587) ~[na:1.8.0_151]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492) ~[na:1.8.0_151]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_151]
+	at feign.Client$Default.convertResponse(Client.java:152) ~[feign-core-9.5.1.jar!/:na]
+	at feign.Client$Default.execute(Client.java:74) ~[feign-core-9.5.1.jar!/:na]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TracingFeignClient.execute(TracingFeignClient.java:88) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.LazyTracingFeignClient.execute(LazyTracingFeignClient.java:54) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180) ~[spring-retry-1.2.2.RELEASE.jar!/:na]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.unsafeSubscribe(Observable.java:10256) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10352) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.Observable.subscribe(Observable.java:10319) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.6.jar!/:1.3.6]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:63) ~[spring-cloud-openfeign-core-2.0.0.M2.jar!/:2.0.0.M2]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.access$001(TraceLoadBalancerFeignClient.java:36) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.lambda$execute$0(TraceLoadBalancerFeignClient.java:50) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TracingFeignClient.execute(TracingFeignClient.java:88) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.LazyTracingFeignClient.execute(LazyTracingFeignClient.java:54) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.execute(TraceLoadBalancerFeignClient.java:50) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:97) ~[feign-core-9.5.1.jar!/:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76) ~[feign-core-9.5.1.jar!/:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103) ~[feign-core-9.5.1.jar!/:na]
+	at com.sun.proxy.$Proxy147.retriveExchangeValue(Unknown Source) ~[na:na]
+	at org.vg.controller.CurrencyConversionController.covertConversion(CurrencyConversionController.java:35) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) ~[spring-boot-actuator-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) ~[spring-cloud-sleuth-core-2.0.0.M9.jar!/:2.0.0.M9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:76) ~[brave-instrumentation-servlet-4.18.2.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar!/:8.5.28]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-04-05 14:58:13.451  INFO [currency-conversion-service,5310178f43c11a19,96254d4598d6c2f7,true] 12558 --- [nio-8100-exec-2] o.v.c.CurrencyConversionController       : request -.org.apache.catalina.connector.RequestFacade@2fff3e4b
+2018-04-05 14:58:16.072  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 14:58:16.624  INFO [currency-conversion-service,c7c59cc64961a39d,d7154fa7131755b7,true] 12558 --- [nio-8100-exec-3] o.v.c.CurrencyConversionController       : request -.org.apache.catalina.connector.RequestFacade@2fff3e4b
+2018-04-05 15:03:16.087  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 15:08:16.101  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 16:55:15.140  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:00:15.149  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:05:15.163  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:10:15.195  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:15:15.211  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:20:15.232  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:25:15.253  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:30:15.272  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:35:15.292  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:40:15.307  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-05 17:45:15.352  INFO [currency-conversion-service,,,] 12558 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
